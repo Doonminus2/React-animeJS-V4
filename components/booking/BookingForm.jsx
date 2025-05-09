@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { animate } from 'animejs';
 import { Box, TextField, Button, Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const BookingForm = () => {
 
@@ -91,9 +92,11 @@ const BookingForm = () => {
 
         {/* Submit Button */}
         <Box sx={{ textAlign: 'right' }}>
+        <Link to={"/ThankYouPage"}>
           <Button variant="contained" color="primary" type="submit">
             Continue to Services 
           </Button>
+          </Link>
         </Box>
       </form>
 
