@@ -3,8 +3,8 @@ import { animate } from 'animejs';
 import { Box, TextField, Button, Typography } from '@mui/material';
 
 const BookingForm = () => {
-  const boxRef = useRef(null);
-  const formRef = useRef(null); // Reference สำหรับฟอร์มทั้งหมด
+
+ const formRef = useRef(null); // Reference สำหรับฟอร์มทั้งหมด
 
   const [formData, setFormData] = useState({
     firstName: '',
@@ -92,7 +92,7 @@ const BookingForm = () => {
         {/* Submit Button */}
         <Box sx={{ textAlign: 'right' }}>
           <Button variant="contained" color="primary" type="submit">
-            Continue to Services
+            Continue to Services 
           </Button>
         </Box>
       </form>
